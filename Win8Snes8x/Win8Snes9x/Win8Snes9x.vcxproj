@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c96c307f-3fad-41e5-83c3-eed1c0bc24df}</ProjectGuid>
+    <RootNamespace>Win8Snes9x</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>Win8Snes9x_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>C:\Users\Marcel\Desktop\Snes8x\</AppxPackageDir>
+    <PackageCertificateThumbprint>FD12373E13FA359DAA5506C6871FC0EE41089F87</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>.\DXTK;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\filter;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\win32;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\jma;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src\apu;..\..\Win8Snes9x\Win8Snes9x\snes9x-1.53-src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;XInput.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;dxguid.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4453</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);METRO_APP;__WIN32__</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">-fsigned-char %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Neither</FavorSizeOrSpeed>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);METRO_APP;__WIN32__</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioSettingsPane.xaml.h">
+      <DependentUpon>AudioSettingsPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="ControllerInput.h" />
+    <ClInclude Include="CXBOXController.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="DXTK\AlignedNew.h" />
+    <ClInclude Include="DXTK\Bezier.h" />
+    <ClInclude Include="DXTK\BinaryReader.h" />
+    <ClInclude Include="DXTK\CommonStates.h" />
+    <ClInclude Include="DXTK\ConstantBuffer.h" />
+    <ClInclude Include="DXTK\dds.h" />
+    <ClInclude Include="DXTK\DDSTextureLoader.h" />
+    <ClInclude Include="DXTK\DemandCreate.h" />
+    <ClInclude Include="DXTK\EffectCommon.h" />
+    <ClInclude Include="DXTK\Effects.h" />
+    <ClInclude Include="DXTK\GeometricPrimitive.h" />
+    <ClInclude Include="DXTK\PlatformHelpers.h" />
+    <ClInclude Include="DXTK\PrimitiveBatch.h" />
+    <ClInclude Include="DXTK\ScreenGrab.h" />
+    <ClInclude Include="DXTK\SharedResourcePool.h" />
+    <ClInclude Include="DXTK\SpriteBatch.h" />
+    <ClInclude Include="DXTK\SpriteFont.h" />
+    <ClInclude Include="DXTK\VertexTypes.h" />
+    <ClInclude Include="DXTK\WICTextureLoader.h" />
+    <ClInclude Include="Emulator.h" />
+    <ClInclude Include="EmulatorFileHandler.h" />
+    <ClInclude Include="EmulatorInput.h" />
+    <ClInclude Include="EmulatorRenderer.h" />
+    <ClInclude Include="EmulatorSettings.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="GeneralSettingsPane.xaml.h">
+      <DependentUpon>GeneralSettingsPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="AboutSettingsPane.xaml.h">
+      <DependentUpon>AboutSettingsPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputSettingsPane.xaml.h">
+      <DependentUpon>InputSettingsPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="KeyboardInput.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="DirectXPage.xaml.h">
+      <DependentUpon>DirectXPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SelectROMPane.xaml.h">
+      <DependentUpon>SelectROMPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SelectStatePane.xaml.h">
+      <DependentUpon>SelectStatePane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SnappedPane.xaml.h">
+      <DependentUpon>SnappedPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\65c816.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\apu.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_common.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_config.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_endian.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_source.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\hermite_resampler.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\linear_resampler.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\resampler.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\ring_buffer.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\SNES_SPC.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_CPU.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_DSP.h" />
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_Filter.h" />
+    <ClInclude Include="snes9x-1.53-src\bsx.h" />
+    <ClInclude Include="snes9x-1.53-src\c4.h" />
+    <ClInclude Include="snes9x-1.53-src\cheats.h" />
+    <ClInclude Include="snes9x-1.53-src\conffile.h" />
+    <ClInclude Include="snes9x-1.53-src\controls.h" />
+    <ClInclude Include="snes9x-1.53-src\cpuaddr.h" />
+    <ClInclude Include="snes9x-1.53-src\cpuexec.h" />
+    <ClInclude Include="snes9x-1.53-src\cpumacro.h" />
+    <ClInclude Include="snes9x-1.53-src\cpuops.h" />
+    <ClInclude Include="snes9x-1.53-src\crosshairs.h" />
+    <ClInclude Include="snes9x-1.53-src\debug.h" />
+    <ClInclude Include="snes9x-1.53-src\display.h" />
+    <ClInclude Include="snes9x-1.53-src\dma.h" />
+    <ClInclude Include="snes9x-1.53-src\dsp.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\2xsai.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\blit.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\epx.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\hq2x.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc_config.h" />
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc_impl.h" />
+    <ClInclude Include="snes9x-1.53-src\font.h" />
+    <ClInclude Include="snes9x-1.53-src\fxemu.h" />
+    <ClInclude Include="snes9x-1.53-src\fxinst.h" />
+    <ClInclude Include="snes9x-1.53-src\getset.h" />
+    <ClInclude Include="snes9x-1.53-src\gfx.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\7z.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\aribitcd.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\ariconst.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\ariprice.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\btreecd.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\crc32.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\iiostrm.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\inbyte.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\jma.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\lencoder.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\litcoder.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\lzma.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\lzmadec.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\portable.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\rcdefs.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\rngcoder.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\s9x-jma.h" />
+    <ClInclude Include="snes9x-1.53-src\jma\winout.h" />
+    <ClInclude Include="snes9x-1.53-src\language.h" />
+    <ClInclude Include="snes9x-1.53-src\logger.h" />
+    <ClInclude Include="snes9x-1.53-src\memmap.h" />
+    <ClInclude Include="snes9x-1.53-src\messages.h" />
+    <ClInclude Include="snes9x-1.53-src\missing.h" />
+    <ClInclude Include="snes9x-1.53-src\movie.h" />
+    <ClInclude Include="snes9x-1.53-src\netplay.h" />
+    <ClInclude Include="snes9x-1.53-src\obc1.h" />
+    <ClInclude Include="snes9x-1.53-src\pixform.h" />
+    <ClInclude Include="snes9x-1.53-src\port.h" />
+    <ClInclude Include="snes9x-1.53-src\ppu.h" />
+    <ClInclude Include="snes9x-1.53-src\reader.h" />
+    <ClInclude Include="snes9x-1.53-src\sa1.h" />
+    <ClInclude Include="snes9x-1.53-src\sar.h" />
+    <ClInclude Include="snes9x-1.53-src\screenshot.h" />
+    <ClInclude Include="snes9x-1.53-src\sdd1.h" />
+    <ClInclude Include="snes9x-1.53-src\sdd1emu.h" />
+    <ClInclude Include="snes9x-1.53-src\seta.h" />
+    <ClInclude Include="snes9x-1.53-src\snapshot.h" />
+    <ClInclude Include="snes9x-1.53-src\snes9x.h" />
+    <ClInclude Include="snes9x-1.53-src\spc7110.h" />
+    <ClInclude Include="snes9x-1.53-src\spc7110dec.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\spc7110emu.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\srtc.h" />
+    <ClInclude Include="snes9x-1.53-src\srtcemu.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\tile.h" />
+    <ClInclude Include="snes9x-1.53-src\win32\CXAudio2.h" />
+    <ClInclude Include="VideoSettingsPane.xaml.h">
+      <DependentUpon>VideoSettingsPane.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="VirtualControllerInput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AudioSettingsPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Common\StandardStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DirectXPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GeneralSettingsPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AboutSettingsPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InputSettingsPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SelectROMPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SelectStatePane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SnappedPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VideoSettingsPane.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Assets\Airwolf.smc">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="Assets\arial24.spritefont">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="Win8Snes9x_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.png" />
+    <Image Include="Assets\pad_buttons.dds" />
+    <Image Include="Assets\pad_buttons_gray.dds" />
+    <Image Include="Assets\pad_cross.dds" />
+    <Image Include="Assets\pad_l_button.dds" />
+    <Image Include="Assets\pad_r_button.dds" />
+    <Image Include="Assets\pad_start_select.dds" />
+    <Image Include="Assets\SmallLogo.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\SplashScreen.png" />
+    <Image Include="Assets\ThumbStick.dds" />
+    <Image Include="Assets\ThumbStickCenter.dds" />
+    <Image Include="Assets\WideLogo.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="AudioSettingsPane.xaml.cpp">
+      <DependentUpon>AudioSettingsPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="ControllerInput.cpp" />
+    <ClCompile Include="CXBOXController.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp">
+      <DependentUpon>DirectXPage.xaml</DependentUpon>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DXTK\AlphaTestEffect.cpp" />
+    <ClCompile Include="DXTK\BasicEffect.cpp" />
+    <ClCompile Include="DXTK\BinaryReader.cpp" />
+    <ClCompile Include="DXTK\CommonStates.cpp" />
+    <ClCompile Include="DXTK\DDSTextureLoader.cpp" />
+    <ClCompile Include="DXTK\DualTextureEffect.cpp" />
+    <ClCompile Include="DXTK\EffectCommon.cpp" />
+    <ClCompile Include="DXTK\EnvironmentMapEffect.cpp" />
+    <ClCompile Include="DXTK\GeometricPrimitive.cpp" />
+    <ClCompile Include="DXTK\PrimitiveBatch.cpp" />
+    <ClCompile Include="DXTK\ScreenGrab.cpp" />
+    <ClCompile Include="DXTK\SkinnedEffect.cpp" />
+    <ClCompile Include="DXTK\SpriteBatch.cpp" />
+    <ClCompile Include="DXTK\SpriteFont.cpp" />
+    <ClCompile Include="DXTK\VertexTypes.cpp" />
+    <ClCompile Include="DXTK\WICTextureLoader.cpp" />
+    <ClCompile Include="Emulator.cpp">
+      <FunctionLevelLinking Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </FunctionLevelLinking>
+      <FunctionLevelLinking Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+      </FunctionLevelLinking>
+      <FunctionLevelLinking Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </FunctionLevelLinking>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="EmulatorFileHandler.cpp" />
+    <ClCompile Include="EmulatorRenderer.cpp" />
+    <ClCompile Include="EmulatorSettings.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="GeneralSettingsPane.xaml.cpp">
+      <DependentUpon>GeneralSettingsPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="AboutSettingsPane.xaml.cpp">
+      <DependentUpon>AboutSettingsPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="InputSettingsPane.xaml.cpp">
+      <DependentUpon>InputSettingsPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="KeyboardInput.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="S9xFunctions.cpp" />
+    <ClCompile Include="SelectROMPane.xaml.cpp">
+      <DependentUpon>SelectROMPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SelectStatePane.xaml.cpp">
+      <DependentUpon>SelectStatePane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SnappedPane.xaml.cpp">
+      <DependentUpon>SnappedPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\apu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC.cpp" />
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC_misc.cpp" />
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC_state.cpp" />
+    <ClCompile Include="snes9x-1.53-src\apu\SPC_DSP.cpp" />
+    <ClCompile Include="snes9x-1.53-src\apu\SPC_Filter.cpp" />
+    <ClCompile Include="snes9x-1.53-src\bsx.cpp" />
+    <ClCompile Include="snes9x-1.53-src\c4.cpp" />
+    <ClCompile Include="snes9x-1.53-src\c4emu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\cheats.cpp" />
+    <ClCompile Include="snes9x-1.53-src\cheats2.cpp" />
+    <ClCompile Include="snes9x-1.53-src\clip.cpp" />
+    <ClCompile Include="snes9x-1.53-src\conffile.cpp" />
+    <ClCompile Include="snes9x-1.53-src\controls.cpp" />
+    <ClCompile Include="snes9x-1.53-src\cpu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\cpuexec.cpp" />
+    <ClCompile Include="snes9x-1.53-src\cpuops.cpp" />
+    <ClCompile Include="snes9x-1.53-src\crosshairs.cpp" />
+    <ClCompile Include="snes9x-1.53-src\debug.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dma.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dsp.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dsp1.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dsp2.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dsp3.cpp" />
+    <ClCompile Include="snes9x-1.53-src\dsp4.cpp" />
+    <ClCompile Include="snes9x-1.53-src\filter\2xsai.cpp" />
+    <ClCompile Include="snes9x-1.53-src\filter\blit.cpp" />
+    <ClCompile Include="snes9x-1.53-src\filter\epx.cpp" />
+    <ClCompile Include="snes9x-1.53-src\filter\hq2x.cpp" />
+    <ClCompile Include="snes9x-1.53-src\filter\snes_ntsc.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\fxdbg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\fxemu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\fxinst.cpp" />
+    <ClCompile Include="snes9x-1.53-src\gfx.cpp" />
+    <ClCompile Include="snes9x-1.53-src\globals.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\7zlzma.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\crc32.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\iiostrm.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\inbyte.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\jma.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\lzma.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\lzmadec.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\s9x-jma.cpp" />
+    <ClCompile Include="snes9x-1.53-src\jma\winout.cpp" />
+    <ClCompile Include="snes9x-1.53-src\loadzip.cpp" />
+    <ClCompile Include="snes9x-1.53-src\logger2.cpp" />
+    <ClCompile Include="snes9x-1.53-src\memmap.cpp" />
+    <ClCompile Include="snes9x-1.53-src\movie.cpp" />
+    <ClCompile Include="snes9x-1.53-src\netplay.cpp" />
+    <ClCompile Include="snes9x-1.53-src\obc1.cpp" />
+    <ClCompile Include="snes9x-1.53-src\ppu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\reader.cpp" />
+    <ClCompile Include="snes9x-1.53-src\sa1.cpp" />
+    <ClCompile Include="snes9x-1.53-src\sa1cpu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\screenshot.cpp" />
+    <ClCompile Include="snes9x-1.53-src\sdd1.cpp" />
+    <ClCompile Include="snes9x-1.53-src\sdd1emu.cpp" />
+    <ClCompile Include="snes9x-1.53-src\server.cpp" />
+    <ClCompile Include="snes9x-1.53-src\seta.cpp" />
+    <ClCompile Include="snes9x-1.53-src\seta010.cpp" />
+    <ClCompile Include="snes9x-1.53-src\seta011.cpp" />
+    <ClCompile Include="snes9x-1.53-src\seta018.cpp" />
+    <ClCompile Include="snes9x-1.53-src\snapshot.cpp" />
+    <ClCompile Include="snes9x-1.53-src\snes9x.cpp" />
+    <ClCompile Include="snes9x-1.53-src\spc7110.cpp" />
+    <ClCompile Include="snes9x-1.53-src\spc7110dec.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\spc7110emu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\srtc.cpp" />
+    <ClCompile Include="snes9x-1.53-src\srtcemu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\tile.cpp" />
+    <ClCompile Include="snes9x-1.53-src\win32\CXAudio2.cpp" />
+    <ClCompile Include="VideoSettingsPane.xaml.cpp">
+      <DependentUpon>VideoSettingsPane.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="VirtualControllerInput.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

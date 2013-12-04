@@ -1,0 +1,15 @@
+﻿<UserControl
+    x:Class="Win8Snes9x.SnappedPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Snes9x"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="346">
+    
+    <Grid Background="#FF222222">
+        <TextBlock Margin="33,125,33,110" TextWrapping="Wrap" Text="Emulation paused while the App is snapped" FontSize="24" TextAlignment="Center" RenderTransformOrigin="1.111,-2.692"/>
+    </Grid>
+</UserControl>

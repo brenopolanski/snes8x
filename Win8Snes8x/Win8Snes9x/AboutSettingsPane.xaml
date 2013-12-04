@@ -1,0 +1,112 @@
+﻿<UserControl
+    x:Class="Win8Snes9x.AboutSettingsPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Snes9x"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="346" Height="530">
+
+    <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,0">
+        <Grid Background="#FF222222" Margin="0,0,0,0">
+            <Rectangle Fill="#FF555555" Stroke="Black" Height="87" VerticalAlignment="Top"/>
+            <TextBlock Margin="115,39,0,0" TextWrapping="Wrap" Text="About" FontSize="24" VerticalAlignment="Top" Height="28" HorizontalAlignment="Left" Width="180"/>
+            <Button Style="{StaticResource AppBarButtonStyle}" 
+                Tag="Refresh" Click="BackClick"
+                AutomationProperties.AutomationId="BackAppBarButton" Content="&#xE112;"
+                Margin="10,21,0,0" RenderTransformOrigin="1.23,0.758" HorizontalAlignment="Left" Width="100" Height="66" VerticalAlignment="Top"/>
+            <ScrollViewer Margin="10,92,10,10" Background="#FF222222" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                <TextBlock TextWrapping="Wrap" FontSize="16">
+                	<Run Text="Snes8x"/>
+                	<LineBreak/>
+                	<Run Text="Version: 1.16"/>
+                	<LineBreak/>
+                	<Run Text="Contact: snes8x@gmail.com"/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<LineBreak FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode"/>
+                	<Run FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="The author is not responsible for any illegal use of this software. Furthermore, there is no warranty for this software and the author is not liable for any damages."/>
+                	<LineBreak FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode"/>
+                	<LineBreak FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode"/>
+                	<Run FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="This software contains parts of Snes9x, a portable and freeware SNES emulator:"/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="Snes9x license:"/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="Permission to use, copy, modify and/or"/>
+                	<Run Text=" "/>
+                	<Run Text="distribute Snes9x in both binary"/>
+                	<Run Text=" "/>
+                	<Run Text="and source form, for non-commercial"/>
+                	<Run Text=" "/>
+                	<Run Text="purposes, is hereby granted without"/>
+                	<Run Text=" "/>
+                	<Run Text="fee, providing that this license information"/>
+                	<Run Text=" "/>
+                	<Run Text="and copyright notice appear"/>
+                	<Run Text=" "/>
+                	<Run Text="with all copies and any derived work."/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="This software is provided 'as-is', without any express or implied"/>
+                	<Run Text=" "/>
+                	<Run Text="warranty. In no event shall the authors be held liable for any damages"/>
+                	<Run Text=" "/>
+                	<Run Text="arising from the use of this software or it's derivatives."/>
+                	<Run Text=" "/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="Snes9x is freeware for PERSONAL USE only."/>
+                	<Run Text=" "/>
+                	<Run Text="Commercial users should"/>
+                	<Run Text=" "/>
+                	<Run Text="seek permission of the copyright holders first. Commercial use includes,"/>
+                	<Run Text=" "/>
+                	<Run Text="but is not limited to, charging"/>
+                	<Run Text=" "/>
+                	<Run Text="money for Snes9x or software derived from"/>
+                	<Run Text=" "/>
+                	<Run Text="Snes9x, including Snes9x or derivatives in"/>
+                	<Run Text=" "/>
+                	<Run Text="commercial game bundles, and/or"/>
+                	<Run Text=" "/>
+                	<Run Text="using Snes9x as a promotion for your commercial product."/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="The copyright holders request that bug fixes and improvements to the code"/>
+                	<Run Text=" "/>
+                	<Run Text="should be forwarded to them so everyone can benefit"/>
+                	<Run Text=" "/>
+                	<Run Text="from the modifications"/>
+                	<Run Text=" "/>
+                	<Run Text="in future versions."/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="Super NES and Super Nintendo"/>
+                	<Run Text=" "/>
+                	<Run Text="Entertainment System are trademarks of"/>
+                	<Run Text=" "/>
+                	<Run Text="Nintendo Co., Limited and its subsidiary"/>
+                	<Run Text=" "/>
+                	<Run Text="companies."/>
+                	<LineBreak/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="See "/>
+                	<Run Text="Snes9x homepage"/>
+                	<Run Text=" for detailed information"/>
+                	<Run Text=": http://www.snes9x.com/"/>
+                </TextBlock>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</UserControl>

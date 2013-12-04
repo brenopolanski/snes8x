@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>c96c307f-3fad-41e5-83c3-eed1c0bc24df</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>b47bbfbc-7706-4c4e-ab86-29ee870b7a84</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Emulator">
+      <UniqueIdentifier>{b76d4b74-5d5c-4011-b8f9-2c99e26f1a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Snes9x">
+      <UniqueIdentifier>{4b32ca56-033e-48f8-9b54-c2ce1c79ec4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Snes9x\JMA">
+      <UniqueIdentifier>{fb42e6f2-5136-4174-bd94-527942882eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Snes9x\APU">
+      <UniqueIdentifier>{78f80fac-7aec-459c-82cb-1972e6ebc587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Snes9x\Emu">
+      <UniqueIdentifier>{117bd633-7ca3-4a89-938b-4a13f0d8e9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Snes9x\Filter">
+      <UniqueIdentifier>{2c44011f-7a45-4d80-97bf-39405196194e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulator\Sound">
+      <UniqueIdentifier>{8b9e752d-d0cc-476f-89ed-5775bcf068ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAML">
+      <UniqueIdentifier>{1bc09916-8412-4a7c-bf31-aeedc257bf90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXTK">
+      <UniqueIdentifier>{ae28b06c-87e2-4468-970c-b986db633a90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Emulator.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="S9xFunctions.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\win32\CXAudio2.cpp">
+      <Filter>Emulator\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\7zlzma.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\crc32.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\iiostrm.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\inbyte.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\jma.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\lzma.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\lzmadec.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\s9x-jma.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\jma\winout.cpp">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\apu.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC_misc.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\SNES_SPC_state.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\SPC_DSP.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\apu\SPC_Filter.cpp">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\bsx.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\c4.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\c4emu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\cheats.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\cheats2.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\clip.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\conffile.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\controls.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\cpu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\cpuexec.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\cpuops.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\crosshairs.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\debug.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dma.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dsp.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dsp1.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dsp2.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dsp3.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\dsp4.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\fxdbg.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\fxemu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\fxinst.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\gfx.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\globals.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\loadzip.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\logger2.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\memmap.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\movie.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\netplay.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\obc1.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\ppu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\reader.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\sa1.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\sa1cpu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\screenshot.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\sdd1.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\sdd1emu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\server.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\seta.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\seta010.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\seta011.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\seta018.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\snapshot.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\snes9x.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\spc7110.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\spc7110dec.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\spc7110emu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\srtc.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\srtcemu.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\tile.cpp">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\filter\2xsai.cpp">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\filter\blit.cpp">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\filter\epx.cpp">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\filter\hq2x.cpp">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="snes9x-1.53-src\filter\snes_ntsc.c">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSettingsPane.xaml.cpp" />
+    <ClCompile Include="GeneralSettingsPane.xaml.cpp" />
+    <ClCompile Include="VideoSettingsPane.xaml.cpp" />
+    <ClCompile Include="SelectROMPane.xaml.cpp" />
+    <ClCompile Include="SnappedPane.xaml.cpp" />
+    <ClCompile Include="SelectStatePane.xaml.cpp" />
+    <ClCompile Include="InputSettingsPane.xaml.cpp" />
+    <ClCompile Include="AboutSettingsPane.xaml.cpp" />
+    <ClCompile Include="CXBOXController.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="EmulatorFileHandler.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="EmulatorSettings.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerInput.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardInput.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualControllerInput.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\AlphaTestEffect.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\BasicEffect.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\BinaryReader.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\CommonStates.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\DDSTextureLoader.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\DualTextureEffect.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\EffectCommon.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\EnvironmentMapEffect.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\GeometricPrimitive.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\PrimitiveBatch.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\ScreenGrab.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\SkinnedEffect.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\SpriteBatch.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\SpriteFont.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\VertexTypes.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTime.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DBase.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="EmulatorRenderer.cpp">
+      <Filter>Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTK\WICTextureLoader.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="Emulator.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\win32\CXAudio2.h">
+      <Filter>Emulator\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\7z.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\aribitcd.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\ariconst.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\ariprice.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\btreecd.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\crc32.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\iiostrm.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\inbyte.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\jma.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\lencoder.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\litcoder.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\lzma.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\lzmadec.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\portable.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\rcdefs.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\rngcoder.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\s9x-jma.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\jma\winout.h">
+      <Filter>Emulator\Snes9x\JMA</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\apu.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_common.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_config.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_endian.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\blargg_source.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\hermite_resampler.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\linear_resampler.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\resampler.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\ring_buffer.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\SNES_SPC.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_CPU.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_DSP.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\apu\SPC_Filter.h">
+      <Filter>Emulator\Snes9x\APU</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\65c816.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\bsx.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\c4.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\cheats.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\conffile.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\controls.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\cpuaddr.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\cpuexec.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\cpumacro.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\cpuops.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\crosshairs.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\debug.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\display.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\dma.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\dsp.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\font.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\fxemu.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\fxinst.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\getset.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\gfx.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\language.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\logger.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\memmap.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\messages.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\missing.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\movie.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\netplay.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\obc1.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\pixform.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\port.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\ppu.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\reader.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\sa1.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\sar.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\screenshot.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\sdd1.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\sdd1emu.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\seta.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\snapshot.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\snes9x.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\spc7110.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\spc7110dec.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\spc7110emu.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\srtc.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\srtcemu.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\tile.h">
+      <Filter>Emulator\Snes9x\Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\2xsai.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\blit.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\epx.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\hq2x.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc_config.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="snes9x-1.53-src\filter\snes_ntsc_impl.h">
+      <Filter>Emulator\Snes9x\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSettingsPane.xaml.h" />
+    <ClInclude Include="GeneralSettingsPane.xaml.h" />
+    <ClInclude Include="VideoSettingsPane.xaml.h" />
+    <ClInclude Include="SelectROMPane.xaml.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="SnappedPane.xaml.h" />
+    <ClInclude Include="SelectStatePane.xaml.h" />
+    <ClInclude Include="InputSettingsPane.xaml.h" />
+    <ClInclude Include="AboutSettingsPane.xaml.h" />
+    <ClInclude Include="CXBOXController.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="EmulatorFileHandler.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="EmulatorSettings.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerInput.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardInput.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="EmulatorInput.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualControllerInput.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\AlignedNew.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\Bezier.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\BinaryReader.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\CommonStates.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\ConstantBuffer.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\dds.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\DDSTextureLoader.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\DemandCreate.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\EffectCommon.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\Effects.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\GeometricPrimitive.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\PlatformHelpers.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\PrimitiveBatch.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\ScreenGrab.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\SharedResourcePool.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\SpriteBatch.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\SpriteFont.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\VertexTypes.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTime.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="EmulatorRenderer.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DBase.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXHelper.h">
+      <Filter>Emulator</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTK\WICTextureLoader.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Win8Snes9x_TemporaryKey.pfx" />
+    <None Include="Assets\arial24.spritefont">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\Airwolf.smc">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DirectXPage.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="GeneralSettingsPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="VideoSettingsPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="AudioSettingsPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="SelectROMPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="SnappedPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="SelectStatePane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="InputSettingsPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+    <Page Include="AboutSettingsPane.xaml">
+      <Filter>XAML</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\pad_buttons.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\pad_cross.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\pad_start_select.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\pad_l_button.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\pad_r_button.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\pad_buttons_gray.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\WideLogo.scale-100.png" />
+    <Image Include="Assets\ThumbStickCenter.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ThumbStick.dds">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
