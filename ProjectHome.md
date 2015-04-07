@@ -1,0 +1,1 @@
+Snes8x is a a SNES emulator for Windows Phone and Windows 8/RT based on Snes9x.
